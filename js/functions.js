@@ -56,6 +56,7 @@ function mostrarDoctoresPorEstado(estado) {
         const especialidad = doc.especialidad ? String(doc.especialidad).trim() : "";
         const cedula = doc.cedula ? String(doc.cedula).trim() : "";
         const direccion = doc.direccion ? String(doc.direccion).trim() : "";
+        const municipio = doc.municipio ? String(doc.municipio).trim() : "";
         const email = doc.email ? String(doc.email).trim() : "";
         const consultorio = doc.consultorio ? String(doc.consultorio).trim() : "";
         const movil = doc.movil ? String(doc.movil).trim() : "";
@@ -73,7 +74,7 @@ function mostrarDoctoresPorEstado(estado) {
                 <p>Cédula Profesional: <span>${cedula}</span></p>
                 <p>Dirección: 
                 <a href="https://www.google.com/maps/search/${encodeURIComponent(direccion)}" target="_blank">
-                    <span>${direccion}</span>
+                    <span>${direccion} ${municipio}, ${estado}  </span>
                 </a>
                 </p>
                 <p>Correo Electrónico: 
