@@ -1,0 +1,330 @@
+@font-face {
+  font-family: "holidayfreeregular";
+  src: url("../fonts/holidayfree-webfont.eot");
+  src: url("../fonts/holidayfree-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/holidayfree-webfont.woff2") format("woff2"),
+    url("../fonts/holidayfree-webfont.woff") format("woff"),
+    url("../fonts/holidayfree-webfont.ttf") format("truetype"),
+    url("../fonts/holidayfree-webfont.svg#holidayfreeregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+html {
+  font-size: 16px;
+}
+body,
+html,
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+body {
+  background: url(../img/background.png) no-repeat top center fixed;
+  background-size: cover;
+  font-family: "Figtree", sans-serif;
+  color: rgba(255, 255, 255, 1);
+}
+/*Header*/
+.menuRow {
+  position: sticky;
+  top: 0;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  z-index: 1000;
+}
+.logoContainer {
+  padding-left: 1.5rem;
+}
+.logoContainer a .svgLogo {
+  width: 12.5rem;
+}
+.mobileMenuContainer {
+  padding-right: 2.5rem;
+}
+.mobileMenuContainer a {
+  color: rgba(255, 255, 255, 1);
+  line-height: 0;
+  font-size: 1.75rem;
+}
+.menuContainer ul {
+  list-style: none;
+  padding-inline-start: 0;
+  padding: 0 1.25rem 0 1.25rem;
+  margin-bottom: 0;
+}
+.menuContainer ul li {
+  font-size: 1rem;
+}
+.menuContainer ul li.active {
+  background: rgba(245, 162, 197, 1);
+  padding: 0.15rem 1rem;
+  border-radius: 18.5px;
+}
+.menuContainer ul li a {
+  color: rgba(255, 255, 255, 1);
+  font-size: 1rem;
+  text-decoration: none;
+  display: block;
+}
+.menuContainer ul li a:hover {
+  text-decoration: none;
+}
+.mobileMenu {
+  height: 100vh;
+  position: fixed;
+  right: -100%;
+  top: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1001;
+}
+.mobileMenu ul {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  list-style: none;
+  padding-inline-start: 0;
+  margin-bottom: 0;
+  background: rgba(0, 0, 0, 0.25);
+}
+.mobileMenu ul li {
+  padding: 0.5rem 0 0.5rem 0;
+  color: rgba(255, 255, 255, 1);
+  font-size: 1.25rem;
+  display: block;
+}
+.mobileMenu ul li:first-child {
+  margin-bottom: 1rrem;
+}
+.mobileMenu ul li a {
+  font-size: 1.75rem;
+  color: rgba(255, 255, 255, 1);
+  text-decoration: none;
+  display: block;
+}
+/*Scroller*/
+.scroller {
+  width: 100%;
+  position: absolute;
+  bottom: 30dvh;
+  display: flex;
+  justify-content: center;
+}
+.scroller a {
+  color: rgba(255, 255, 255, 1);
+  text-decoration: none;
+  display: block;
+  background: rgba(255, 255, 255, 0.35);
+  padding: 0.25rem;
+  border-radius: 10px;
+}
+.scroller a span {
+  font-size: 2.5rem;
+  position: relative;
+  top: 0.25rem;
+}
+/*Main*/
+.mainContainer {
+  position: relative;
+}
+.mainContainer .imageContainer img {
+  width: 100%;
+  height: auto;
+}
+.mainContainer .textContainer h1 {
+  font-family: "holidayfreeregular";
+  color: rgba(255, 255, 255, 1);
+  font-size: 4.75rem;
+  max-width: 510px;
+}
+.mainContainer .textContainer h2 {
+  font-size: clamp(1.25rem, 1vw + 1rem, 2rem);
+  text-align: justify;
+  max-width: 650px;
+  color: rgba(255, 255, 255, 1);
+}
+/*Boxes*/
+.boxesContainer {
+  height: 100vh;
+}
+.hoverBox {
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.hoverBox a p {
+  color: rgba(255, 255, 255, 1);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.hoverBox::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.55);
+  mix-blend-mode: multiply;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.hoverBox img {
+  width: 100%;
+  transition: all 500ms;
+}
+.hoverBox:hover img {
+  width: 100%;
+  transform: scale(1.15);
+  transition: all 500ms;
+}
+.boxesContainer .boxLegend h3 {
+  max-width: 800px;
+}
+/*Nosotros*/
+.nosotrosContainer .imageContainer img {
+  width: 84%;
+  height: auto;
+}
+.nosotrosContainer .textContainer h2 {
+  font-size: clamp(1.25rem, 1vw + 1rem, 2rem);
+  text-align: left;
+  max-width: 650px;
+  color: rgba(255, 255, 255, 1);
+}
+.nosotrosContainer .textContainer h2:first-child {
+  margin-bottom: 4rem;
+}
+/*Nosotros*/
+.contactoContainer .imageContainer img {
+  width: 84%;
+  height: auto;
+}
+.contactoContainer .textContainer {
+  border-left: solid 3px rgba(255, 255, 255, 1);
+}
+.contactoContainer .textContainer h2 {
+  font-size: clamp(1.25rem, 1vw + 1rem, 2rem);
+  text-align: justify;
+  max-width: 650px;
+  color: rgba(255, 255, 255, 1);
+}
+.contactoContainer .textContainer a {
+  color: rgba(255, 255, 255, 1);
+  font-size: clamp(1.25rem, 1vw + 1rem, 2rem);
+  margin-bottom: 1rem;
+  display: block;
+}
+/*Directorio*/
+.selectContainer p {
+  margin-top: 10rem;
+  font-size: 2rem;
+}
+.directoryShowcase {
+  background: rgba(245, 245, 245, 1);
+  margin-top: 10rem;
+}
+.directoryShowcase .sidebarDirectory {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.directoryShowcase .sidebarDirectory p {
+  color: rgba(108, 166, 193, 1);
+  font-size: 2rem;
+}
+.directoryShowcase .sidebarDirectory button {
+  background: rgba(255, 255, 255, 1);
+  color: rgba(138, 138, 138, 1);
+  text-align: left;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.directoryShowcase .sidebarDirectory button.active {
+  color: rgba(108, 166, 193, 1);
+  border: none;
+}
+.modal .modal-content {
+  background: rgba(255, 255, 255, 0.8);
+}
+.modal .modal-body h1 {
+  font-size: 1.25rem;
+  line-height: 2.5rem;
+  color: rgba(0, 71, 101, 1);
+  margin-bottom: 0;
+}
+.modal .modal-body p {
+  font-size: 1rem;
+  color: rgba(0, 71, 101, 1);
+  margin-bottom: 0;
+}
+.modal .modal-footer {
+  border-top: none;
+}
+.btn-primary {
+  background: rgba(108, 166, 193, 1);
+  border: none;
+  font-weight: bold;
+}
+.btn-primary:hover {
+  background: rgba(108, 166, 193, 1);
+}
+.btn-secondary {
+  background: rgba(207, 207, 207, 1);
+  border: none;
+  color: rgba(0, 0, 0, 1);
+  font-weight: bold;
+}
+.btn-secondary:hover {
+  background: rgba(207, 207, 207, 1);
+  color: rgba(0, 0, 0, 1);
+}
+.addressBookContainer {
+  background: rgba(245, 245, 245, 1);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.addressBookItem {
+  background: rgba(255, 255, 255, 1);
+  padding: 2rem 0;
+  margin: 2rem 0;
+}
+.addressBookItem img {
+  width: 100%;
+  height: auto;
+}
+.addressBookItem h3 {
+  color: rgba(108, 166, 193, 1);
+  font-family: "Figtree", sans-serif;
+  font-size: 1.5rem;
+}
+.addressBookItem p {
+  color: rgba(0, 0, 0, 1);
+  margin-bottom: 0;
+  font-size: 1.2rem;
+  font-family: "Figtree", sans-serif;
+}
+.addressBookItem p:first-child {
+  margin-bottom: 1rem;
+}
+.headerDirectory {
+  background: url(../img/background.png) no-repeat top center fixed;
+  background-size: 100%;
+}
+.cofepris {
+  position: fixed;
+  bottom: 0;
+  left: 10px;
+}
+.cofepris.black {
+  color: rgba(0, 0, 0, 1);
+}
