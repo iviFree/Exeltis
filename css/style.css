@@ -224,8 +224,12 @@ body {
   display: block;
 }
 /*Directorio*/
-.selectContainer p {
+.selectContainer {
   margin-top: 10rem;
+  margin-bottom: 10rem;
+  font-size: 2rem;
+}
+.selectContainer p {
   font-size: 2rem;
 }
 .directoryShowcase {
@@ -290,8 +294,6 @@ body {
 }
 .addressBookContainer {
   background: rgba(245, 245, 245, 1);
-  padding-top: 2rem;
-  padding-bottom: 2rem;
 }
 .addressBookItem {
   background: rgba(255, 255, 255, 1);
@@ -301,6 +303,7 @@ body {
 .addressBookItem img {
   width: 100%;
   height: auto;
+  margin-bottom: 1.5rem;
 }
 .addressBookItem h3 {
   color: rgba(108, 166, 193, 1);
@@ -312,13 +315,14 @@ body {
   margin-bottom: 0;
   font-size: 1.2rem;
   font-family: "Figtree", sans-serif;
+  margin-bottom: 0.25rem;
 }
 .addressBookItem p:first-child {
   margin-bottom: 1rem;
 }
 .headerDirectory {
   background: url(../img/background.png) no-repeat top center fixed;
-  background-size: 100%;
+  background-size: cover;
 }
 .cofepris {
   position: fixed;
