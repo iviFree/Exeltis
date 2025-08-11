@@ -59,42 +59,26 @@ function mostrarDoctoresPorEstado(estado) {
         const municipio = doc.municipio ? String(doc.municipio).trim() : "";
         const email = doc.email ? String(doc.email).trim() : "";
         const consultorio = doc.consultorio ? String(doc.consultorio).trim() : "";
+        const extension = doc.extension ? String(doc.extension).trim() : "";
         const movil = doc.movil ? String(doc.movil).trim() : "";
         const imagen = doc.imagen ? String(doc.imagen).trim() : "";
         const item = document.createElement("div");
         item.className = "col-12 col-sm-12 col-md-12 col-lg-9 col-xl-8 col-xxl-7 mx-auto";
-        item.innerHTML = `
-        <div class="row addressBookItem">
+        item.innerHTML =
+        `<div class="row addressBookItem">
             <div class="col-11 col-sm-11 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
                 <img src="../img/medicos/${imagen}" alt="${nombre}" />
             </div>
             <div class="col-11 col-sm-11 col-md-8 col-lg-9 col-xl-9 col-xxl-9">
-                <h3>Nombre: <span>${nombre}</span></h3>
-                <p>Especialidad: <span>${especialidad}</span></p>
-                <p>Cédula Profesional: <span>${cedula}</span></p>
-                <p>Dirección: 
-                <a href="https://www.google.com/maps/search/${encodeURIComponent(direccion)}" target="_blank">
-                    <span>${direccion} ${municipio}, ${estado}  </span>
-                </a>
-                </p>
-                <p>Correo Electrónico: 
-                <a href="mailto:${email}">
-                    <span>${email}</span>
-                </a>
-                </p>
-                <p>Teléfono de consultorio: 
-                <a href="tel:${consultorio}">
-                    <span>${consultorio}</span>
-                </a>
-                </p>
-                <p>Teléfono móvil: 
-                <a href="tel:${movil}">
-                    <span>${movil}</span>
-                </a>
-                </p>
+                <h3>Nombre: <span>${nombre}.</span></h3>
+                <p>Especialidad: <span>${especialidad}.</span></p>
+                <p>Cédula Profesional: <span>${cedula}.</span></p>
+                <p>Dirección: <a href="https://www.google.com/maps/search/${encodeURIComponent(direccion)}" target="_blank"><span>${direccion} ${municipio}, ${estado}</span></a>.</p>
+                <p>Correo Electrónico: <a href="mailto:${email}"><span>${email}</span></a></p>
+                <p>Teléfono de consultorio: <a href="tel:${consultorio}"><span>${consultorio}</span></a>. <span>Extensión: ${extension}</span></p>
+                <p>Teléfono móvil: <a href="tel:${movil}"><span>${movil}</span></a>.</p>
             </div>    
-        </div>
-        `;
+        </div>`;
         contenedor.appendChild(item);
     });
 }
