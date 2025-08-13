@@ -303,7 +303,6 @@ body {
 .addressBookItem img {
   width: 100%;
   height: auto;
-  margin-bottom: 1.5rem;
 }
 .addressBookItem h3 {
   color: rgba(108, 166, 193, 1);
