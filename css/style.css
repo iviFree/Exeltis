@@ -225,9 +225,13 @@ body {
 }
 /*Directorio*/
 .selectContainer {
-  margin-top: 10rem;
-  margin-bottom: 10rem;
+  padding-top: 1rem;
+  padding-bottom: 3rem;
   font-size: 2rem;
+  position: sticky;
+  top: 7rem;
+  background: url(../img/background.png) no-repeat top center fixed;
+  background-size: cover;
 }
 .selectContainer p {
   font-size: 2rem;
