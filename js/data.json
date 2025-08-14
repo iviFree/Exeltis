@@ -1,4 +1,17 @@
 [
+    {
+    "imagen": "imeldaHernandez.png",
+    "nombre": "Dra. Imelda Hernández Marin",
+    "estado": "CDMX",
+    "municipio": "Cuauhtémoc",
+    "email": "",
+    "consultorio": 5528582030,
+    "extension": "",
+    "direccion": "Álvaro Obregón 74-3, Roma Norte, 06700,",
+    "movil": "5528582030",
+    "especialidad": "Biología de la Reproducción, Especialista en Ginecología Endocrina y Menopausia",
+    "cedula": 3443724
+  },
   {
     "imagen": "raulMata.png",
     "nombre": "Dr.Raúl Mata Gallardo",
@@ -13,7 +26,7 @@
     "cedula": 551072
   },
   {
-    "imagen": "mariaDeJesús.png",
+    "imagen": "mariaDeJesus.png",
     "nombre": "Dra. María de Jesús Cruz Gutiérrez",
     "estado": "Morelos",
     "municipio": "Cuautla",
@@ -42,7 +55,7 @@
     "imagen": "gabrielGallo.png",
     "nombre": "Dr. Gabriel Alejandro Gallo Olvera",
     "estado": "CDMX",
-    "municipio": "Benito Juarez",
+    "municipio": "Benito Juárez",
     "email": "gabrielgalloolvera@yahoo.com",
     "consultorio": 5580042503,
     "extension": "",
@@ -55,7 +68,7 @@
     "imagen": "gabrielGallo.png",
     "nombre": "Dr. Gabriel Alejandro Gallo Olvera",
     "estado": "CDMX",
-    "municipio": "Benito Juarez",
+    "municipio": "Benito Juárez",
     "email": "gabrielgalloolvera@yahoo.com",
     "consultorio": 5518924148,
     "extension": "",
@@ -68,7 +81,7 @@
     "imagen": "victorManuel.png",
     "nombre": "Dr. Victor Manuel Mercado Cárdenas",
     "estado": "CDMX",
-    "municipio": "Benito Juarez",
+    "municipio": "Benito Juárez",
     "email": "clinicaintegralmenopausia@hotmail.com",
     "consultorio": 5554004875,
     "extension": "",
@@ -128,19 +141,6 @@
     "movil": 5535205766,
     "especialidad": "GINECOLOGÍA Y OBSTETRICIA",
     "cedula": 4584252
-  },
-  {
-    "imagen": "imeldaHernandez.png",
-    "nombre": "Dra. Imelda Hernández Marin",
-    "estado": "CDMX",
-    "municipio": "Cuauhtémoc",
-    "email": "",
-    "consultorio": 5528582030,
-    "extension": "",
-    "direccion": "Álvaro Obregón 74-3, Roma Norte, 06700,",
-    "movil": "552858 2030",
-    "especialidad": "",
-    "cedula": 3443724
   },
   {
     "imagen": "rafaelBedoya.png",
@@ -211,7 +211,7 @@
     "imagen": "armandoMontano.png",
     "nombre": "Dr. Jesús Armando Montaño Uzcanga",
     "estado": "CDMX",
-    "municipio": "Benito Juarez",
+    "municipio": "Benito Juárez",
     "email": "dr_jamontano@hotmail.com",
     "consultorio": 5518924148,
     "extension": "",

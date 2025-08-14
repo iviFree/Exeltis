@@ -99,7 +99,7 @@ function mostrarDoctoresPorEstado(estado) {
     item.innerHTML = `
       <div class="row addressBookItem d-flex align-items-center">
         <div class="col-11 col-sm-11 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
-          <img src="../img/medicos/${imagen}" alt="${nombre}" onerror="this.src='../img/medicos/default.png'; this.alt='Sin foto';" />
+          <img src="../img/medicos/${imagen}" alt="${nombre}" />
         </div>
         <div class="col-11 col-sm-11 col-md-8 col-lg-9 col-xl-9 col-xxl-9">
           <h3><span>${nombre}.</span></h3>
